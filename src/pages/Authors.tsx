@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../app.css';
 import AuthorForm from '../components/AuthorForm';
 import AuthorList from '../components/AuthorList';
 

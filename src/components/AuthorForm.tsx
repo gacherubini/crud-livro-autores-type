@@ -9,7 +9,6 @@ const AuthorForm: React.FC<AuthorFormProps> = ({ onAddAuthor }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    id: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,16 +21,15 @@ const AuthorForm: React.FC<AuthorFormProps> = ({ onAddAuthor }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.name.trim() && formData.email.trim() && formData.id.trim()) {
+    if (formData.name.trim() && formData.email.trim() ) {
       const newAuthor = {
-        id_author: uuidv4(),
+        id: uuidv4(),
         ...formData,
       };
       onAddAuthor(newAuthor);
       setFormData({
         name: '',
         email: '',
-        id: '',
       });
     }
   };
@@ -40,7 +38,6 @@ const AuthorForm: React.FC<AuthorFormProps> = ({ onAddAuthor }) => {
     <form onSubmit={handleSubmit}>
       <input type="text" name="name" placeholder="Nome do Autor" value={formData.name} onChange={handleChange} />
       <input type="text" name="email" placeholder="email" value={formData.email} onChange={handleChange} />
-      <input type="text" name="id" placeholder="id" value={formData.id} onChange={handleChange} />
       <button type="submit">Add Author</button>
     </form>
   );

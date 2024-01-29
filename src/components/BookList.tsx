@@ -20,7 +20,7 @@ const BookList: React.FC<BookListProps> = ({ books, onDeleteBook, onViewBook}) =
         <div key={book.id}>
           <p>Nome do livro: {book.name}</p>
           <p>Pages: {book.pages}</p>
-          <p>Autor_id: {book.autor_id}</p>
+          <p>Autor_id: {book.autor_id}</p> 
           <button onClick={() => onDeleteBook(book.id)}>Delete</button>
           <button onClick={() => onViewBook(book.id)}>View More</button>
         </div>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import '../style/Details.css';
+
 
 interface Book {
   id: string;
@@ -30,7 +32,7 @@ const BookDetails: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="BookDetails">
       <h2>Book Details</h2>
       <p>Title: {selectedBook.name}</p>
       <p>Pages: {selectedBook.pages}</p>

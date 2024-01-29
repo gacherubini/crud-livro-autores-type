@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import '../style/Details.css';
+
 
 interface Author {
   id: string;
@@ -29,11 +31,10 @@ const AuthorDetails: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="AuthorDetails">
       <h2>Authors Details</h2>
       <p>Name: {selectedAuthor.name}</p>
       <p>Email: {selectedAuthor.email}</p>
-      <p>ID: {selectedAuthor.id}</p>
     </div>
   );
 };

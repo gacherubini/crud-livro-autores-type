@@ -1,0 +1,38 @@
+/* BookDetails.css */
+
+.BookDetails {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .BookDetails h2 {
+    color: #333;
+  }
+  
+  .BookDetails p {
+    margin: 10px 0;
+  }
+  
+  /* AuthorDetails.css */
+  
+  .AuthorDetails {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .AuthorDetails h2 {
+    color: #333;
+  }
+  
+  .AuthorDetails p {
+    margin: 10px 0;
+  }
+  
